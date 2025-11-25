@@ -1,6 +1,6 @@
 {
-	"id": "generic-emberplus",
-	"name": "generic-emberplus",
+	"id": "generic-emberplus-custom",
+	"name": "generic-emberplus-custom",
 	"shortname": "emberplus",
 	"description": "Ember+ module for Companion",
 	"version": "0.0.0",
