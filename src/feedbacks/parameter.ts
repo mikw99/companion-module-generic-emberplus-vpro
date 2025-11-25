@@ -1,5 +1,5 @@
 import type { CompanionFeedbackContext, CompanionFeedbackInfo } from '@companion-module/base'
-import { Model as EmberModel } from 'emberplus-connection'
+import { Model as EmberModel } from '@mikw99/sofie-emberplus-connection-vproFix'
 import type { parameterFeedbackOptions } from '../feedback'
 import type { EmberPlusInstance } from '../index'
 import { EmberPlusState } from '../state'
@@ -11,7 +11,7 @@ import {
 	substituteEscapeCharacters,
 } from '../util'
 import { FeedbackId } from '../feedback'
-import { ParameterType } from 'emberplus-connection/dist/model'
+import { ParameterType } from '@mikw99/sofie-emberplus-connection-vproFix/dist/model'
 
 export const subscribeParameterFeedback =
 	(state: EmberPlusState, self: EmberPlusInstance) =>

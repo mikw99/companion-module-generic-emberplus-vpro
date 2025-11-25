@@ -1,5 +1,5 @@
 import type { CompanionActionEvent, CompanionActionContext, InstanceBase } from '@companion-module/base'
-import { EmberClient, Model as EmberModel } from 'emberplus-connection'
+import { EmberClient, Model as EmberModel } from '@mikw99/sofie-emberplus-connection-vproFix'
 import type PQueue from 'p-queue'
 import type { EmberPlusConfig } from '../config'
 import { FeedbackId } from '../feedback'

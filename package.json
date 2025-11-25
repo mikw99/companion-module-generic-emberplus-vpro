@@ -32,7 +32,7 @@
 	"dependencies": {
 		"@companion-module/base": "~1.12.1",
 		"delay": "^6.0.0",
-		"emberplus-connection": "git+https://github.com/mikw99/sofie-emberplus-connection-vproFix.git",
+		"@mikw99/sofie-emberplus-connection-vproFix": "git+https://github.com/mikw99/sofie-emberplus-connection-vproFix.git",
 		"lodash": "^4.17.21",
 		"p-queue": "^8.1.0"
 	},

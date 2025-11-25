@@ -2,7 +2,7 @@ import type { CompanionVariableDefinition } from '@companion-module/base'
 import type { EmberPlusConfig } from './config'
 import type { EmberPlusState } from './state'
 import { sanitiseVariableId } from './util'
-import { ParameterType } from 'emberplus-connection/dist/model'
+import { ParameterType } from '@mikw99/sofie-emberplus-connection-vproFix/dist/model'
 
 export function GetVariablesList(config: EmberPlusConfig, state: EmberPlusState): CompanionVariableDefinition[] {
 	config.monitoredParameters?.sort()

@@ -10,9 +10,9 @@ import { type EmberPlusConfig, GetConfigFields } from './config'
 import { GetPresetsList } from './presets'
 import { FeedbackId, GetFeedbacksList } from './feedback'
 import { EmberPlusState } from './state'
-import { EmberClient, Model as EmberModel } from 'emberplus-connection' // note - emberplus-conn is in parent repo, not sure if it needs to be defined as dependency
-import { ElementType, ParameterType } from 'emberplus-connection/dist/model'
-import type { TreeElement, EmberElement } from 'emberplus-connection/dist/model'
+import { EmberClient, Model as EmberModel } from '@mikw99/sofie-emberplus-connection-vproFix' // note - emberplus-conn is in parent repo, not sure if it needs to be defined as dependency
+import { ElementType, ParameterType } from '@mikw99/sofie-emberplus-connection-vproFix/dist/model'
+import type { TreeElement, EmberElement } from '@mikw99/sofie-emberplus-connection-vproFix/dist/model'
 import { Logger, LoggerLevel } from './logger.js'
 import { StatusManager } from './status.js'
 import { UpgradeScripts } from './upgrades'
@@ -262,7 +262,7 @@ export class EmberPlusInstance extends InstanceBase<EmberPlusConfig> {
 		createVar: boolean = true,
 	): Promise<TreeElement<EmberElement> | undefined> {
 		if (path === '') return undefined
-		return (await this.emberQueue
+		return await this.emberQueue
 			.add(async (): Promise<TreeElement<EmberElement> | undefined> => {
 				if (this.state.emberElement.has(path) && (this.config.monitoredParameters?.includes(path) || !createVar)) {
 					return this.state.emberElement.get(path)
@@ -296,7 +296,7 @@ export class EmberPlusInstance extends InstanceBase<EmberPlusConfig> {
 			.catch((e) => {
 				this.logger.debug(`Failed to register parameter:`, e)
 				return undefined
-			})) as TreeElement<EmberElement> | undefined
+			})
 	}
 
 	// Track whether actions are being recorded

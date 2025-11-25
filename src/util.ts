@@ -5,7 +5,7 @@ import type {
 	DropdownChoice,
 } from '@companion-module/base'
 import { EmberPlusState } from './state'
-import { Model as EmberModel } from 'emberplus-connection'
+import { Model as EmberModel } from '@mikw99/sofie-emberplus-connection-vproFix'
 import type { CompanionCommonCallbackContext } from '@companion-module/base/dist/module-api/common'
 
 export function assertUnreachable(_never: never): void {

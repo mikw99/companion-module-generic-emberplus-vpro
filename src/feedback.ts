@@ -9,7 +9,7 @@ import type {
 	CompanionOptionValues,
 } from '@companion-module/base'
 import type { EmberPlusInstance } from './index'
-import { EmberClient, Model as EmberModel } from 'emberplus-connection'
+import { EmberClient, Model as EmberModel } from '@mikw99/sofie-emberplus-connection-vproFix'
 import type { EmberPlusConfig } from './config'
 import {
 	learnParameterFeedbackOptions,

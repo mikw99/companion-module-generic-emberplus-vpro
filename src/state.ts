@@ -1,5 +1,5 @@
-import type { Model as EmberModel } from 'emberplus-connection'
-import { type TreeElement, type EmberElement, ElementType } from 'emberplus-connection/dist/model'
+import type { Model as EmberModel } from '@mikw99/sofie-emberplus-connection-vproFix'
+import { type TreeElement, type EmberElement, ElementType } from '@mikw99/sofie-emberplus-connection-vproFix/dist/model'
 
 export interface CurrentSelected {
 	target: number
